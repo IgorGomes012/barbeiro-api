@@ -9,7 +9,7 @@ interface Appointment {
   time: string;
 }
 
-const appointments: Appointment[] = [];
+let appointments: Appointment[] = [];
 
 const appointmentRoutes = Router();
 
@@ -51,6 +51,12 @@ appointmentRoutes.post("/", (request, response) => {
     message: "Agendamento criado com sucesso",
     appointment: newAppointment,
   });
+});
+
+appointmentRoutes.delete("/:id", (request, response) => {
+  const { id } = request.params;
+
+  // excluir aqui
 });
 
 export { appointmentRoutes };
