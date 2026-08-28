@@ -22,7 +22,7 @@ appointmentRoutes.post("/", (request, response) => {
 
   if (!service || !date || !time || !clientName || !clientNumber) {
     return response.status(400).json({
-      message: "Todos os campos são obrigatórios",
+      message: "Todos os campos são obrigatórioss",
     });
   }
 
