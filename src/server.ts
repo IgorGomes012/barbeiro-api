@@ -12,7 +12,7 @@ app.use("/appointments", appointmentRoutes);
 
 app.get("/", (request, response) => {
   return response.json({
-    message: "API da barbearia funcionand",
+    message: "API da barbearia funcionando",
   });
 });
 
